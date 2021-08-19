@@ -8,6 +8,7 @@
   --border-portfolio: #eeeeee;
   --fill-social-icon: #afb1b8;
 
+  --footer-link-color: rgba(255, 255, 255, 0.6);
   --text-primary: #212121;
   --text-secondary: #757575;
   --animation: cubic-bezier(0.4, 0, 0.2, 1);
@@ -203,6 +204,27 @@ ul {
   padding: 47px 0 94px;
 }
 
+.about-foto-card {
+  position: relative;
+}
+
+.name-foto {
+  position: absolute;
+  padding: 27px 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
 .team-card {
   background-color: var(--primary-color);
   border-radius: 0px 0px 4px 4px;
@@ -237,6 +259,7 @@ ul {
 .info-title {
   padding-top: 30px;
   padding-bottom: 10px;
+
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -427,6 +450,7 @@ ul {
 .social-link-footer {
   margin-left: 70px;
 }
+
 .footer-social {
   fill: var(--title-color);
 }
@@ -436,17 +460,19 @@ ul {
   padding: 60px 0;
 }
 
-.footer-main a {
+.footer-main .logo,
+.map-link {
   color: var(--title-color);
 }
 
-.link-footer .contact-link {
-  color: rgba(255, 255, 255, 0.6);
+.contacts-list-footer :hover {
+  color: var(--blue-color);
 }
 
 .link-footer:not(:first-child) {
   margin-top: 9px;
 }
+
 .info-title-footer {
   padding-bottom: 20px;
   color: var(--title-color);
@@ -509,6 +535,6 @@ ul {
 }
 
 .close:hover,
-.close :focus {
+.close:focus {
   color: var(--blue-color);
 }

@@ -107,9 +107,24 @@
             <div class="container container-about-us">
                 <h2 class="title">Чем мы занимаемся</h2>
                 <ul class="about-foto flex-between">
-                    <li class="about-foto-card"><img src="./images/img2.jpg" alt="селфи фото" width="370"></li>
-                    <li class="about-foto-card"><img src="./images/img3.jpg" alt="селфи фото" width="370"></li>
-                    <li class="about-foto-card"><img src="./images/img1.jpg" alt="селфи фото" width="370"></li>
+                    <li class="about-foto-card">
+                        <a href="#">
+                            <img src="./images/img2.jpg" alt="кодит" width="370">
+                            <p class="name-foto"> Декстопные приложения</p>
+                        </a>
+                    </li>
+                    <li class="about-foto-card">
+                        <a href="#">
+                            <img src="./images/img3.jpg" alt="апс" width="370">
+                            <p class="name-foto">Мобильные приложения</p>
+                        </a>
+                    </li>
+                    <li class="about-foto-card">
+                        <a href="#">
+                            <img src="./images/img1.jpg" alt="дизайн" width="370">
+                            <p class="name-foto"> Дизайнерские решения</p>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -281,7 +296,7 @@
                 <h2 class="title">Постоянные клиенты</h2>
                 <ul class="client-list flex-between">
                     <li class="client-item">
-                        <a href="#" class="client-link">
+                        <a href="#" class="client-link centered">
                             <svg class="client-icon" width="106" height="60">
                                 <use href="./images/icon.svg#icon-Logo"></use>
                             </svg>
@@ -379,12 +394,14 @@
             </div>
 
         </footer>
-        <!-- Модальное окно -->
+
+        Модальное окно
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button class="close" data-modal-close>
                     <svg class="close_icon" width="18px" height="18px">
-                        <use></use>
+                        <use href="./images/icon.svg#icon-envelope">
+                        </use>
                     </svg>
                 </button>
                 <form class="form-order" action="js-speaker-form">
