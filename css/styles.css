@@ -97,7 +97,23 @@ ul {
 
 /* link navigation header */
 
+.nav-link::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -1px;
+
+  display: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+  background-color: var(--blue-color);
+}
+
 .nav-link {
+  position: relative;
   display: block;
   padding: 32px 0;
   color: var(--text-primary);
@@ -105,6 +121,10 @@ ul {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+}
+
+.nav-link:hover::after {
+  display: block;
 }
 
 .nav-link:hover,
@@ -369,6 +389,39 @@ ul {
   width: 370px;
 }
 
+/* Оверлей портфолио */
+
+.thumb-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-text-thumb {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition: transform 250ms var(--animation);
+}
+
+.portfolio-card:hover .overlay-text-thumb,
+.portfolio-card:hover .overlay-text {
+  transform: translateY(0);
+}
+
+.overlay-text {
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--title-color);
+  padding: 63px 24px;
+}
+
 .portfolio-item-list:not(:nth-child(3n)) {
   margin-right: 30px;
 }
@@ -384,6 +437,7 @@ ul {
 
 .portfolio-link {
   display: block;
+  position: relative;
 }
 
 .portfolio-link:hover,
@@ -493,9 +547,12 @@ ul {
   position: absolute;
   left: 0;
   top: 0;
+
   width: 100%;
   height: 100%;
+
   background-color: rgba(0, 0, 0, 0.2);
+
   opacity: 1;
   transition: opacity 250ms var(--animation);
 }
@@ -529,7 +586,7 @@ ul {
 
   background-color: var(--primary-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+  border-radius: 80%;
 
   transition: color 250ms var(--animation);
 }
