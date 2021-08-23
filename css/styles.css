@@ -46,6 +46,12 @@ ul {
   padding: 0px;
 }
 
+img {
+  min-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .centered {
   display: flex;
   align-items: center;
@@ -129,7 +135,7 @@ ul {
     background-color 250ms var(--animation);
 }
 
-.nav-link:hover::after {
+.nav-link.current::after {
   display: block;
 }
 
@@ -454,8 +460,7 @@ ul {
 }
 
 .portfolio-link {
-  display: block;
-  position: relative;
+  /* display: block; */
 
   transition: transform 250ms var(--animation);
 }
