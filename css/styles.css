@@ -192,8 +192,8 @@ img {
 .main-section .primary-button:hover {
   color: var(--blue-color);
   background-color: var(--primary-color);
-  transition: color 250ms var(--animation);
 }
+
 .logo {
   font-family: Raleway;
   font-size: 26px;
@@ -379,6 +379,7 @@ img {
   background-color: var(--blue-color);
   fill: var(--primary-color);
   transition: fill 250ms var(--animation);
+  transition: background-color 250ms var(--animation);
 }
 
 /* страница портфолио  */
@@ -460,7 +461,7 @@ img {
 }
 
 .portfolio-link {
-  /* display: block; */
+  display: block;
 
   transition: transform 250ms var(--animation);
 }
