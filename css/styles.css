@@ -122,7 +122,11 @@ ul {
   line-height: 16px;
   letter-spacing: 0.02em;
 
-  transition: color 250ms;
+  /* transition: color 250ms;
+  transition: transform 250ms var(--animation); */
+
+  transition: color 250ms var(--animation),
+    background-color 250ms var(--animation);
 }
 
 .nav-link:hover::after {
@@ -134,6 +138,7 @@ ul {
   color: var(--blue-color);
 }
 
+/* главная страница */
 .main-section {
   padding: 200px 0;
   text-align: center;
@@ -234,9 +239,9 @@ ul {
 }
 
 .about-img {
-  display:block; 
-  width:100%;
-  height:auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .name-foto {
@@ -359,10 +364,8 @@ ul {
   align-items: center;
   justify-content: center;
   fill: var(--fill-social-icon);
-  background-color: rgba(255, 255, 255, 0.1);
 
   transition: background-color 250ms var(--animation);
- 
 }
 
 .social-link-icon:hover,
@@ -370,7 +373,6 @@ ul {
   background-color: var(--blue-color);
   fill: var(--primary-color);
   transition: fill 250ms var(--animation);
-  background-color 250ms var(--animation);
 }
 
 /* страница портфолио  */
@@ -474,6 +476,9 @@ ul {
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
+
+  transition: color 250ms var(--animation),
+    background-color 250ms var(--animation);
 }
 
 .secondary-button:hover,
@@ -524,11 +529,12 @@ ul {
 }
 
 .social-icon-footer {
-   transition: fill 250ms var(--animation);
+  transition: fill 250ms var(--animation);
 }
 
 .footer-social {
   fill: var(--title-color);
+  background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms var(--animation);
 }
 
