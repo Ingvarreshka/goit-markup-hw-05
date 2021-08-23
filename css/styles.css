@@ -456,6 +456,8 @@ ul {
 .portfolio-link {
   display: block;
   position: relative;
+
+  transition: transform 250ms var(--animation);
 }
 
 .portfolio-link:hover,
