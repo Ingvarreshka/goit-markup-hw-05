@@ -371,6 +371,7 @@ img {
   justify-content: center;
   fill: var(--fill-social-icon);
 
+  transition: fill 250ms var(--animation);
   transition: background-color 250ms var(--animation);
 }
 
@@ -378,8 +379,8 @@ img {
 .social-link-icon:focus {
   background-color: var(--blue-color);
   fill: var(--primary-color);
-  transition: fill 250ms var(--animation);
-  transition: background-color 250ms var(--animation);
+  /* transition: fill 250ms var(--animation);
+  transition: background-color 250ms var(--animation); */
 }
 
 /* страница портфолио  */
